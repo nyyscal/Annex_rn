@@ -22,7 +22,7 @@ const AuthPage = () => {
         <TouchableOpacity
           className="flex-row items-center bg-white w-[85%] py-3 rounded-full justify-center"
           onPress={() => handleSocialAuth("oauth_google")}
-          disabled={isSocialLoading} 
+          disabled={isSocialLoading !== null} 
         >
           {isSocialLoading ? (
             <ActivityIndicator size="small" color="black" className="mr-2 w-10 h-8" />
